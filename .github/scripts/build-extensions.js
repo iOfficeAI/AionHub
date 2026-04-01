@@ -87,10 +87,15 @@ async function main() {
     const size = fs.statSync(zipPath).size;
 
     const hubs = [];
+    const contributesSummary = {};
+    
     if (extJson.contributes) {
       Object.keys(extJson.contributes).forEach(key => {
-        if (Array.isArray(extJson.contributes[key]) && extJson.contributes[key].length > 0) {
+        const items = extJson.contributes[key];
+        if (Array.isArray(items) && items.length > 0) {
           hubs.push(key);
+          // Extract the 'id' field from each contribution item
+          contributesSummary[key] = items.map(item => item.id).filter(id => id !== undefined);
         }
       });
     }
@@ -104,6 +109,7 @@ async function main() {
       icon: extJson.icon || undefined,
       engines: extJson.engine || {},
       hubs: hubs,
+      contributes: contributesSummary,
       dist: {
         tarball: `dist/${zipName}`,
         integrity: integrity,

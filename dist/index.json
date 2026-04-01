@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "generatedAt": "2026-04-01T14:24:42.204Z",
+    "generatedAt": "2026-04-01T15:56:02.031Z",
     "extensions": {
         "aionext-auggie": {
             "name": "aionext-auggie",
@@ -14,6 +14,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "auggie"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-auggie.zip",
                 "integrity": "sha512-F9jwekbAOA9SIEWGUmf+SOUwq4BhLMggjS3WQbWn6fqGWRO6YowuZXCGOgRW9+qvzBS38/IfLOsU04TMvXoO7w==",
@@ -32,6 +37,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "claude"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-claude.zip",
                 "integrity": "sha512-evhOk2WIoB26nMn4nl5g0cYMYrWbg59WGS9fVLf3BxYok+3/wQMK+prtR0VLm1XvA24wzEOW149E0lPWjJBI9A==",
@@ -50,6 +60,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "codebuddy"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-codebuddy.zip",
                 "integrity": "sha512-rN4GCR3U/yjigjuZ0fIW+2YWuHWLw2D2hsTfEdCcry+8B0J+YqZtdXmdB1Fkw0AWky7n2zRcdFouvOnSwdd+Yw==",
@@ -68,6 +83,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "copilot"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-copilot.zip",
                 "integrity": "sha512-tbY6xrQNfMOkwJFFFcwMhGydHKrCQ2B54GDN0q0R2ztW+gPPgXtnlDm5KmKnCiGJQsZpPFyEHguxgRAEMIjZ7g==",
@@ -86,6 +106,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "cursor"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-cursor.zip",
                 "integrity": "sha512-D6aGqXWZEixecDYruCUPGm8zVHgfiW1TRcPSsbnfSuahRL8EWzyxOQm6oT47dzq/cvfSgrA2FvNXJ1FKLTER9Q==",
@@ -104,6 +129,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "droid"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-droid.zip",
                 "integrity": "sha512-Cw6kPPIEDrrmBhoOrpXYTrbfLaKG9eOMgQyNGCOBPIxkQWMoFrk0guNY6VYiZYXdxBmm94QwDq/d1+w04V1r2A==",
@@ -122,6 +152,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "gemini"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-gemini.zip",
                 "integrity": "sha512-HXD24md8GZqMWGZDPENfw4wF175mVrhSTkJa4ReXRnZAidJ3FW6WyMeq5KYzw5+xMykjHE6pA6ucJT5jp3YSvA==",
@@ -140,6 +175,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "goose"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-goose.zip",
                 "integrity": "sha512-7Zf3+bbLWDbfIeWjIj0ulHXFt559xPmYMlUmOnTINPy6XXczNHOi4i4szMucJFopxl9nDHQ1ElUkCZ/A8sj3Bg==",
@@ -158,6 +198,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "iflow"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-iflow.zip",
                 "integrity": "sha512-AEX9ItNEStw9Gg3sUNkdah26aAVwjz3CJ7vKz2WpWS8Xzyshiz4n4N5ybmqJTRvx96q8SEeF3duOi0cErZ/rxw==",
@@ -176,6 +221,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "kimi"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-kimi.zip",
                 "integrity": "sha512-P2pXI8KqswzPIlcQ0RgJa0yCT6DPAMXV9mu/rpgt64b3zCac0igwPMWUq8xAvV9y9rUQz07KY6cP89024pBykQ==",
@@ -194,6 +244,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "nanobot"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-nanobot.zip",
                 "integrity": "sha512-EqNkZe5HOq7YEPDpTjiL1+6IuQPgJCp69nV5slhQxwPcLG0A75SKNn9Ttkwi2eMiCd5SQ2ZByEjq2lN+qFrhOA==",
@@ -212,6 +267,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "openclaw-gateway"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-openclaw-gateway.zip",
                 "integrity": "sha512-asEPHisvqr/1qNn+u7DraSSPG4qaPXau+4gnk9MvE4h5Zd3FnJS0J62h/xcmgRmK/q+2TY+SLqi4qW7KS0MShQ==",
@@ -230,6 +290,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "opencode"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-opencode.zip",
                 "integrity": "sha512-EQlcceGP5Wi3IvaZinTt1P7nv2mST1uAmzQQBtXSsJPYtI8aHGmMx6EIbry54PzA9/PtkGb9JGmGdWQFNDtM6w==",
@@ -248,6 +313,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "qoder"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-qoder.zip",
                 "integrity": "sha512-BVj5Lm+0IKFwM7eGsQp/XA1IyxymkO+eH/skruTxp3kAU0blOmTb1Sh/bIPScIhfiPwQB/UsXELPi/d4JFIdOA==",
@@ -266,6 +336,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "qwen"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-qwen.zip",
                 "integrity": "sha512-6ngNMHvAPrNyWjX2meAHGbJiq3LN9negVcb9NawhrnotUDMq3oXNPUlQiU7boHF9P/HXWfwTiMPm2+BcF/Na1w==",
@@ -284,6 +359,11 @@
             "hubs": [
                 "acpAdapters"
             ],
+            "contributes": {
+                "acpAdapters": [
+                    "vibe"
+                ]
+            },
             "dist": {
                 "tarball": "dist/aionext-vibe.zip",
                 "integrity": "sha512-A0SXwcfrEp79GH0YLlU3Ifvk3hTSN5oYW+DsRZXNDAE5M+WiN4B4dqsfuUOjnJGdgrC5f22pfrKQK0UN51MBnA==",
