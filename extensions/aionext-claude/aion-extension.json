@@ -1,0 +1,40 @@
+{
+    "name": "aionext-claude",
+    "displayName": "Claude Code",
+    "version": "1.0.0",
+    "description": "Integrates Anthropic's Claude Code CLI as an ACP adapter in AionUi.",
+    "author": "Aionui Official",
+    "engine": {
+        "aionui": "^1.0.0"
+    },
+    "lifecycle": {
+        "onInstall": {
+            "shell": {
+                "cliCommand": "bun",
+                "args": [
+                    "add",
+                    "-g",
+                    "@anthropic-ai/claude-code"
+                ]
+            },
+            "timeout": 30000
+        }
+    },
+    "contributes": {
+        "acpAdapters": [
+            {
+                "id": "claude",
+                "name": "Claude Code",
+                "description": "Official Claude Code adapter",
+                "connectionType": "stdio",
+                "cliCommand": "claude",
+                "authRequired": true,
+                "enabled": true,
+                "supportsStreaming": false,
+                "skillsDirs": [
+                    ".claude/skills"
+                ]
+            }
+        ]
+    }
+}
