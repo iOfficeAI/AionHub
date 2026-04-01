@@ -271,24 +271,6 @@
                 "integrity": "sha512-6ngNMHvAPrNyWjX2meAHGbJiq3LN9negVcb9NawhrnotUDMq3oXNPUlQiU7boHF9P/HXWfwTiMPm2+BcF/Na1w==",
                 "unpackedSize": 532
             }
-        },
-        "aionext-vibe": {
-            "name": "aionext-vibe",
-            "displayName": "Mistral Vibe",
-            "version": "1.0.0",
-            "description": "Integrates Mistral Vibe as an ACP adapter in AionUi.",
-            "author": "Aionui Official",
-            "engines": {
-                "aionui": "^1.0.0"
-            },
-            "hubs": [
-                "acpAdapters"
-            ],
-            "dist": {
-                "tarball": "dist/aionext-vibe.zip",
-                "integrity": "sha512-A0SXwcfrEp79GH0YLlU3Ifvk3hTSN5oYW+DsRZXNDAE5M+WiN4B4dqsfuUOjnJGdgrC5f22pfrKQK0UN51MBnA==",
-                "unpackedSize": 506
-            }
         }
     },
     "metadata": {
