@@ -1,0 +1,40 @@
+{
+    "name": "aionext-auggie",
+    "displayName": "Augment Code",
+    "version": "1.0.0",
+    "description": "Integrates Augment Code as an ACP adapter in AionUi.",
+    "author": "Aionui Official",
+    "engine": {
+        "aionui": "^1.0.0"
+    },
+    "contributes": {
+        "acpAdapters": [
+            {
+                "id": "auggie",
+                "name": "Augment Code",
+                "description": "Official Augment Code adapter",
+                "connectionType": "stdio",
+                "cliCommand": "auggie",
+                "authRequired": false,
+                "enabled": true,
+                "supportsStreaming": false,
+                "acpArgs": [
+                    "--acp"
+                ]
+            }
+        ]
+    },
+    "lifecycle": {
+        "onInstall": {
+            "shell": {
+                "cliCommand": "bun",
+                "args": [
+                    "add",
+                    "-g",
+                    "@augmentcode/auggie"
+                ]
+            },
+            "timeout": 30000
+        }
+    }
+}

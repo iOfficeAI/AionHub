@@ -1,0 +1,47 @@
+name: Build Extensions
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'extensions/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to push back to the repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup system zip
+        run: sudo apt-get update && sudo apt-get install -y zip
+
+      - name: Build and Package Extensions
+        run: node .github/scripts/build-extensions.js
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add only the dist directory
+          git add dist/
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(extensions): auto-build missing extensions into dist"
+            git push
+          fi
