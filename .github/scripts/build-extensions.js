@@ -89,7 +89,12 @@ dirs.forEach(extDirName => {
   // 3. Determine "hubs" based on contributes array
   const hubs = [];
   if (extJson.contributes) {
-    Object.keys(extJson.contributes).forEach(key => hubs.push(key));
+    Object.keys(extJson.contributes).forEach(key => {
+      // Ensure the contribution is an array and has at least one item
+      if (Array.isArray(extJson.contributes[key]) && extJson.contributes[key].length > 0) {
+        hubs.push(key);
+      }
+    });
   }
 
   // 4. Update the index data
