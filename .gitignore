@@ -357,3 +357,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/macOS,Linux,Windows,VisualStudioCode,Python,pycharm+all
 
 dist/
+.vscode/
