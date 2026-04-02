@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "generatedAt": "2026-04-02T10:05:31.186Z",
+    "generatedAt": "2026-04-02T15:39:34.523Z",
     "extensions": {
         "aionext-auggie": {
             "name": "aionext-auggie",
@@ -140,29 +140,6 @@
                 "unpackedSize": 563
             }
         },
-        "aionext-iflow": {
-            "name": "aionext-iflow",
-            "displayName": "iFlow CLI",
-            "version": "1.0.0",
-            "description": "Integrates iFlow CLI as an ACP adapter in AionUi.",
-            "author": "Aionui Official",
-            "engines": {
-                "aionui": "^1.0.0"
-            },
-            "hubs": [
-                "acpAdapters"
-            ],
-            "contributes": {
-                "acpAdapters": [
-                    "iflow"
-                ]
-            },
-            "dist": {
-                "tarball": "aionext-iflow.zip",
-                "integrity": "sha512-cwwQo3vKd1ynrDLwGTUhTHYLJEyM/I9YV8zQ8xXJdQKfX9CCSn+WmnpQPOsQ7NZSx7R7aRZig4roBaVfKLHubw==",
-                "unpackedSize": 571
-            }
-        },
         "aionext-nanobot": {
             "name": "aionext-nanobot",
             "displayName": "Nano Bot",
@@ -257,7 +234,7 @@
         }
     },
     "metadata": {
-        "totalExtensions": 11,
+        "totalExtensions": 10,
         "generatedBy": "Aion Extension Builder v1.0.0",
         "repository": "https://github.com/iOfficeAI/AionHub/"
     }
