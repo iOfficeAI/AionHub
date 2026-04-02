@@ -64,10 +64,10 @@ jobs:
             git push origin dist
 
             # Tag this build with the source commit hash
-            git tag "dist/${MAIN_SHA}"
-            git push origin "dist/${MAIN_SHA}"
+            git tag "dist-${MAIN_SHA}"
+            git push origin "dist-${MAIN_SHA}"
 
-            # Move dist/latest tag to this commit
-            git tag -f dist/latest
-            git push origin dist/latest --force
+            # Move dist-latest tag to this commit
+            git tag -f dist-latest
+            git push origin dist-latest --force
           fi
