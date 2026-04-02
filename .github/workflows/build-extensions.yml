@@ -52,8 +52,9 @@ jobs:
             git rm -rf .
           fi
 
-          # Copy built artifacts into branch root (flat, no nested dist/)
-          cp /tmp/dist-output/*.zip /tmp/dist-output/index.json . 2>/dev/null || true
+          # Clean existing files then copy fresh artifacts
+          git rm -rf . 2>/dev/null || true
+          cp /tmp/dist-output/*.zip /tmp/dist-output/index.json .
 
           # Stage and commit if there are changes
           git add -A
