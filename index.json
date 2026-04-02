@@ -1,0 +1,264 @@
+{
+    "schemaVersion": 1,
+    "generatedAt": "2026-04-02T09:12:36.428Z",
+    "extensions": {
+        "aionext-auggie": {
+            "name": "aionext-auggie",
+            "displayName": "Augment Code",
+            "version": "1.0.0",
+            "description": "Integrates Augment Code as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "auggie"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-auggie.zip",
+                "integrity": "sha512-4vfCqvrZigpZITh3hYyQE/a440j7t6XsUqC/c7y6Wm/0cyZEnHMtI7nLGqChBT1Px222GUbJqMS82/4Z19LqPg==",
+                "unpackedSize": 577
+            }
+        },
+        "aionext-claude": {
+            "name": "aionext-claude",
+            "displayName": "Claude Code",
+            "version": "1.0.0",
+            "description": "Integrates Anthropic's Claude Code CLI as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "claude"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-claude.zip",
+                "integrity": "sha512-t+qfA9Wx5GO4APLvMhra2P+pU5M+spqMir4MTzG/IzQ9FDTjx6tlWTvIFZ894MsrE7AGN6W+8tDw8Z0jTSWNnQ==",
+                "unpackedSize": 585
+            }
+        },
+        "aionext-codebuddy": {
+            "name": "aionext-codebuddy",
+            "displayName": "CodeBuddy",
+            "version": "1.0.0",
+            "description": "Integrates CodeBuddy as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "codebuddy"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-codebuddy.zip",
+                "integrity": "sha512-tQxGgxlf5pXJRPdLhdrONUtRbCIhJn70ANjII1xOsOPwil/76lVlu2vNuMjFTFIDzfSjQjNO2uJIf39Uc2avHw==",
+                "unpackedSize": 585
+            }
+        },
+        "aionext-copilot": {
+            "name": "aionext-copilot",
+            "displayName": "GitHub Copilot",
+            "version": "1.0.0",
+            "description": "Integrates GitHub Copilot as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "copilot"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-copilot.zip",
+                "integrity": "sha512-LhViShmKZRh5fcL0dCNV9xjVb6R3y0OqWYp2uINseLD2JJwu0ey8W/A061IpOamwKCmLl/9wKaF44CE6/lnGPA==",
+                "unpackedSize": 586
+            }
+        },
+        "aionext-gemini": {
+            "name": "aionext-gemini",
+            "displayName": "Google CLI",
+            "version": "1.0.0",
+            "description": "Integrates Google CLI as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "gemini"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-gemini.zip",
+                "integrity": "sha512-RHaH358ug1Fr+1NBJDZhihopsAOFSLCTbK7mMuBDzDlN2F0kcojzhBDAECTGRqnx8i4Af0A74qV64U3xOb83Ig==",
+                "unpackedSize": 569
+            }
+        },
+        "aionext-goose": {
+            "name": "aionext-goose",
+            "displayName": "Goose",
+            "version": "1.0.0",
+            "description": "Integrates Goose as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "goose"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-goose.zip",
+                "integrity": "sha512-cE6ACmP3ooFrOmT0bhgzEr5h6kdXKhIUI8EcW1I/cIPHXGasUFJJRp/zfjv0pjwtF9+8uVDd7Yo/iPPT40o2Hw==",
+                "unpackedSize": 563
+            }
+        },
+        "aionext-iflow": {
+            "name": "aionext-iflow",
+            "displayName": "iFlow CLI",
+            "version": "1.0.0",
+            "description": "Integrates iFlow CLI as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "iflow"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-iflow.zip",
+                "integrity": "sha512-cwwQo3vKd1ynrDLwGTUhTHYLJEyM/I9YV8zQ8xXJdQKfX9CCSn+WmnpQPOsQ7NZSx7R7aRZig4roBaVfKLHubw==",
+                "unpackedSize": 571
+            }
+        },
+        "aionext-nanobot": {
+            "name": "aionext-nanobot",
+            "displayName": "Nano Bot",
+            "version": "1.0.0",
+            "description": "Integrates Nano Bot as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "nanobot"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-nanobot.zip",
+                "integrity": "sha512-gQlP9UwPLnosSI4Ac26o/QrihD1WDMvszVw8mpo+uNN1uJu2u20XYLe4LByq0tr9PbWGemmYa8rEy9MMhHhsrw==",
+                "unpackedSize": 557
+            }
+        },
+        "aionext-openclaw-gateway": {
+            "name": "aionext-openclaw-gateway",
+            "displayName": "OpenClaw",
+            "version": "1.0.0",
+            "description": "Integrates OpenClaw as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "openclaw-gateway"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-openclaw-gateway.zip",
+                "integrity": "sha512-PzfX4G3KeYryAougk2fYXpjd8iAIMR5hdwQWHonGTO5gQZy903aYeG0ydJBURl8Rj9C6xgsEYlaJFBogw9zyiQ==",
+                "unpackedSize": 576
+            }
+        },
+        "aionext-opencode": {
+            "name": "aionext-opencode",
+            "displayName": "OpenCode",
+            "version": "1.0.0",
+            "description": "Integrates OpenCode as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "opencode"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-opencode.zip",
+                "integrity": "sha512-UXdUZIzI30U9Apf/SZQdEvKzsfviPRASX/8JH2d8RIlRu/V5YDISzJVtSglCrZ5Or9+xBlPWWQGGZgRu+7Fk7A==",
+                "unpackedSize": 567
+            }
+        },
+        "aionext-qwen": {
+            "name": "aionext-qwen",
+            "displayName": "Qwen Code",
+            "version": "1.0.0",
+            "description": "Integrates Qwen CLI as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "qwen"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-qwen.zip",
+                "integrity": "sha512-IgNhW59kX+OaeWyQcuylp8AqXIfjSCKpqhEtekhv0mk180fuSTUczvn3uS2Kj2Uj6IsCZ50hI16TJWa7ik9p7Q==",
+                "unpackedSize": 579
+            }
+        }
+    },
+    "metadata": {
+        "totalExtensions": 11,
+        "generatedBy": "Aion Extension Builder v1.0.0",
+        "repository": "https://github.com/iOfficeAI/AionHub/"
+    }
+}
