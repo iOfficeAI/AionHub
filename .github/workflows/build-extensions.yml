@@ -38,8 +38,10 @@ jobs:
 
           MAIN_SHA=$(git rev-parse --short HEAD)
 
-          # Save built dist to a temp location before switching branches
+          # Save built dist to a temp location then remove it to avoid
+          # name collision with the dist branch
           cp -r dist /tmp/dist-output
+          rm -rf dist
 
           # Create an orphan dist branch or check it out
           if git ls-remote --exit-code origin dist >/dev/null 2>&1; then
