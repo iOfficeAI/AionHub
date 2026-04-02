@@ -38,29 +38,22 @@ jobs:
 
           MAIN_SHA=$(git rev-parse --short HEAD)
 
-          # Save built dist to a temp location then remove it to avoid
-          # name collision with the dist branch
+          # Save built dist then clean working tree for branch switch
           cp -r dist /tmp/dist-output
           rm -rf dist
 
-          # Create an orphan dist branch or check it out
-          if git ls-remote --exit-code origin dist >/dev/null 2>&1; then
-            git fetch origin dist
-            git checkout dist
-          else
-            git checkout --orphan dist
-            git rm -rf .
-          fi
+          # Always start fresh with an orphan branch
+          git checkout --orphan dist-tmp
+          git rm -rf .
 
-          # Clean existing files then copy fresh artifacts
-          git rm -rf . 2>/dev/null || true
+          # Copy artifacts into branch root
           cp /tmp/dist-output/*.zip /tmp/dist-output/index.json .
 
-          # Stage and commit if there are changes
+          # Stage and commit
           git add -A
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "chore(dist): auto-build from main@${MAIN_SHA}"
-            git push origin dist
+            git push --force origin HEAD:dist
           fi

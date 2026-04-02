@@ -17,7 +17,7 @@ async function main() {
     fs.mkdirSync(distDir, { recursive: true });
   }
 
-  let indexData = {
+  const indexData = {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
     extensions: {},
@@ -28,31 +28,13 @@ async function main() {
     }
   };
 
-  if (fs.existsSync(indexJsonPath)) {
-    try {
-      const rawData = fs.readFileSync(indexJsonPath, 'utf8');
-      const jsonStr = rawData.replace(/\/\/[^\n]*\n/g, '\n');
-      indexData = JSON.parse(jsonStr);
-    } catch (e) {
-      console.error('Failed to parse existing dist/index.json, starting fresh.', e.message);
-    }
-  }
-
-  if (!indexData.extensions) indexData.extensions = {};
-
   const dirs = fs.readdirSync(extensionsDir).filter(f => f.startsWith('aionext-') && fs.statSync(path.join(extensionsDir, f)).isDirectory());
-
-  let hasUpdates = false;
 
   for (const extDirName of dirs) {
     const extPath = path.join(extensionsDir, extDirName);
     const zipName = `${extDirName}.zip`;
     const zipPath = path.join(distDir, zipName);
     const extJsonPath = path.join(extPath, 'aion-extension.json');
-
-    if (fs.existsSync(zipPath) && indexData.extensions[extDirName]) {
-      continue;
-    }
 
     console.log(`Packaging extension: ${extDirName}...`);
 
@@ -116,18 +98,15 @@ async function main() {
         unpackedSize: size
       }
     };
-
-    hasUpdates = true;
   }
 
-  if (hasUpdates) {
-    indexData.generatedAt = new Date().toISOString();
-    indexData.metadata.totalExtensions = Object.keys(indexData.extensions).length;
-    
+  indexData.metadata.totalExtensions = Object.keys(indexData.extensions).length;
+
+  if (indexData.metadata.totalExtensions > 0) {
     fs.writeFileSync(indexJsonPath, JSON.stringify(indexData, null, 4) + '\n');
-    console.log(`Successfully updated dist/index.json with ${Object.keys(indexData.extensions).length} extensions.`);
+    console.log(`Successfully built dist/index.json with ${indexData.metadata.totalExtensions} extensions.`);
   } else {
-    console.log('No new extensions to package.');
+    console.log('No extensions found to package.');
   }
 }
 
