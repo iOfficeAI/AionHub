@@ -30,18 +30,33 @@ jobs:
       - name: Build and Package Extensions
         run: node .github/scripts/build-extensions.js
 
-      - name: Commit and Push Changes
+      - name: Deploy dist to dist branch
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Add only the dist directory
-          git add -f dist/
-          
-          # Check if there are changes to commit
+
+          # Capture the main branch commit info
+          MAIN_SHA=$(git rev-parse --short HEAD)
+
+          # Create an orphan dist branch or check it out
+          if git ls-remote --exit-code origin dist >/dev/null 2>&1; then
+            git fetch origin dist
+            git checkout dist
+          else
+            git checkout --orphan dist
+            git rm -rf .
+          fi
+
+          # Copy built dist files into the branch root
+          git checkout main -- dist/
+          mv dist/* .
+          rm -rf dist
+
+          # Stage and commit if there are changes
+          git add -A
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore(extensions): auto-build missing extensions into dist"
-            git push
+            git commit -m "chore(dist): auto-build from main@${MAIN_SHA}"
+            git push origin dist
           fi
