@@ -42,11 +42,17 @@ jobs:
           cp -r dist /tmp/dist-output
           rm -rf dist
 
-          # Always start fresh with an orphan branch
-          git checkout --orphan dist-tmp
-          git rm -rf .
+          # Checkout existing dist branch or create it
+          if git ls-remote --exit-code origin dist >/dev/null 2>&1; then
+            git fetch origin dist
+            git checkout dist
+          else
+            git checkout --orphan dist
+            git rm -rf .
+          fi
 
-          # Copy artifacts into branch root
+          # Replace all artifacts with fresh build
+          git rm -rf . 2>/dev/null || true
           cp /tmp/dist-output/*.zip /tmp/dist-output/index.json .
 
           # Stage and commit
@@ -55,5 +61,13 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore(dist): auto-build from main@${MAIN_SHA}"
-            git push --force origin HEAD:dist
+            git push origin dist
+
+            # Tag this build with the source commit hash
+            git tag "dist/${MAIN_SHA}"
+            git push origin "dist/${MAIN_SHA}"
+
+            # Move dist/latest tag to this commit
+            git tag -f dist/latest
+            git push origin dist/latest --force
           fi
