@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/iOfficeAI/AionHub/spec/v1/extension-manifest.schema.json",
+  "$id": "https://raw.githubusercontent.com/iOfficeAI/AionHub/spec/v0/extension-manifest.schema.json",
   "version": "0.1.0",
   "title": "ExtensionManifest",
   "description": "AionUI Extension Manifest schema. Note: Zod .refine() validations (e.g. duplicate ID checks, conditional required fields) cannot be expressed in JSON Schema and are enforced at runtime only.",

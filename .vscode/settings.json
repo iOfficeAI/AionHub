@@ -1,0 +1,8 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": ["**/aion-extension.json"],
+            "url": "https://raw.githubusercontent.com/iOfficeAI/AionHub/spec/v1/extension-manifest.schema.json"
+        }
+    ]
+}
