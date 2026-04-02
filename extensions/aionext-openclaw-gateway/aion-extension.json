@@ -3,23 +3,23 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "auggie",
-                "name": "Augment Code",
-                "description": "Official Augment Code adapter",
+                "id": "openclaw-gateway",
+                "name": "OpenClaw",
+                "description": "Official OpenClaw adapter",
                 "connectionType": "stdio",
-                "cliCommand": "auggie",
-                "defaultCliPath": "bunx @augmentcode/auggie",
+                "cliCommand": "openclaw",
+                "defaultCliPath": "bunx openclaw",
                 "authRequired": false,
                 "enabled": true,
-                "supportsStreaming": false,
+                "supportsStreaming": true,
                 "acpArgs": [
-                    "--acp"
+                    "gateway"
                 ]
             }
         ]
     },
-    "description": "Integrates Augment Code as an ACP adapter in AionUi.",
-    "displayName": "Augment Code",
+    "description": "Integrates OpenClaw as an ACP adapter in AionUi.",
+    "displayName": "OpenClaw",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +30,12 @@
                 "args": [
                     "add",
                     "-g",
-                    "@augmentcode/auggie"
+                    "openclaw"
                 ]
             },
             "timeout": 30000
         }
     },
-    "name": "aionext-auggie",
+    "name": "aionext-openclaw-gateway",
     "version": "1.0.0"
 }

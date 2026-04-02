@@ -3,23 +3,23 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "claude",
-                "name": "Claude Code",
-                "description": "Official Claude Code adapter",
+                "id": "gemini",
+                "name": "Google CLI",
+                "description": "Official Google CLI adapter",
                 "connectionType": "stdio",
-                "cliCommand": "claude",
-                "defaultCliPath": "bunx @anthropic-ai/claude-code",
+                "cliCommand": "gemini",
+                "defaultCliPath": "bunx @google/gemini-cli",
                 "authRequired": true,
-                "enabled": true,
-                "supportsStreaming": false,
+                "enabled": false,
+                "supportsStreaming": true,
                 "skillsDirs": [
-                    ".claude/skills"
+                    ".gemini/skills"
                 ]
             }
         ]
     },
-    "description": "Integrates Anthropic's Claude Code CLI as an ACP adapter in AionUi.",
-    "displayName": "Claude Code",
+    "description": "Integrates Google CLI as an ACP adapter in AionUi.",
+    "displayName": "Google CLI",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +30,12 @@
                 "args": [
                     "add",
                     "-g",
-                    "@anthropic-ai/claude-code"
+                    "@google/gemini-cli"
                 ]
             },
             "timeout": 30000
         }
     },
-    "name": "aionext-claude",
+    "name": "aionext-gemini",
     "version": "1.0.0"
 }

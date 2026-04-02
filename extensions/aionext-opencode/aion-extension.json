@@ -3,23 +3,23 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "auggie",
-                "name": "Augment Code",
-                "description": "Official Augment Code adapter",
+                "id": "opencode",
+                "name": "OpenCode",
+                "description": "Official OpenCode adapter",
                 "connectionType": "stdio",
-                "cliCommand": "auggie",
-                "defaultCliPath": "bunx @augmentcode/auggie",
+                "cliCommand": "opencode",
+                "defaultCliPath": "bunx opencode-ai",
                 "authRequired": false,
                 "enabled": true,
                 "supportsStreaming": false,
                 "acpArgs": [
-                    "--acp"
+                    "acp"
                 ]
             }
         ]
     },
-    "description": "Integrates Augment Code as an ACP adapter in AionUi.",
-    "displayName": "Augment Code",
+    "description": "Integrates OpenCode as an ACP adapter in AionUi.",
+    "displayName": "OpenCode",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +30,12 @@
                 "args": [
                     "add",
                     "-g",
-                    "@augmentcode/auggie"
+                    "opencode-ai"
                 ]
             },
             "timeout": 30000
         }
     },
-    "name": "aionext-auggie",
+    "name": "aionext-opencode",
     "version": "1.0.0"
 }

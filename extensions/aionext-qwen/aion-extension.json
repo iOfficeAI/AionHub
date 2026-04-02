@@ -3,23 +3,26 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "auggie",
-                "name": "Augment Code",
-                "description": "Official Augment Code adapter",
+                "id": "qwen",
+                "name": "Qwen Code",
+                "description": "Official Qwen Code adapter",
                 "connectionType": "stdio",
-                "cliCommand": "auggie",
-                "defaultCliPath": "bunx @augmentcode/auggie",
-                "authRequired": false,
+                "cliCommand": "qwen",
+                "defaultCliPath": "bunx @qwen-code/qwen-code",
+                "authRequired": true,
                 "enabled": true,
-                "supportsStreaming": false,
+                "supportsStreaming": true,
                 "acpArgs": [
                     "--acp"
+                ],
+                "skillsDirs": [
+                    ".qwen/skills"
                 ]
             }
         ]
     },
-    "description": "Integrates Augment Code as an ACP adapter in AionUi.",
-    "displayName": "Augment Code",
+    "description": "Integrates Qwen CLI as an ACP adapter in AionUi.",
+    "displayName": "Qwen Code",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +33,12 @@
                 "args": [
                     "add",
                     "-g",
-                    "@augmentcode/auggie"
+                    "@qwen-code/qwen-code"
                 ]
             },
             "timeout": 30000
         }
     },
-    "name": "aionext-auggie",
+    "name": "aionext-qwen",
     "version": "1.0.0"
 }

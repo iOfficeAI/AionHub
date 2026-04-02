@@ -3,23 +3,20 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "auggie",
-                "name": "Augment Code",
-                "description": "Official Augment Code adapter",
+                "id": "nanobot",
+                "name": "Nano Bot",
+                "description": "Official Nano Bot adapter",
                 "connectionType": "stdio",
-                "cliCommand": "auggie",
-                "defaultCliPath": "bunx @augmentcode/auggie",
+                "cliCommand": "nanobot",
+                "defaultCliPath": "bunx nanobot",
                 "authRequired": false,
                 "enabled": true,
-                "supportsStreaming": false,
-                "acpArgs": [
-                    "--acp"
-                ]
+                "supportsStreaming": false
             }
         ]
     },
-    "description": "Integrates Augment Code as an ACP adapter in AionUi.",
-    "displayName": "Augment Code",
+    "description": "Integrates Nano Bot as an ACP adapter in AionUi.",
+    "displayName": "Nano Bot",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +27,12 @@
                 "args": [
                     "add",
                     "-g",
-                    "@augmentcode/auggie"
+                    "nanobot"
                 ]
             },
             "timeout": 30000
         }
     },
-    "name": "aionext-auggie",
+    "name": "aionext-nanobot",
     "version": "1.0.0"
 }

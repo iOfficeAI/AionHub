@@ -3,23 +3,26 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "auggie",
-                "name": "Augment Code",
-                "description": "Official Augment Code adapter",
+                "id": "goose",
+                "name": "Goose",
+                "description": "Official Goose adapter",
                 "connectionType": "stdio",
-                "cliCommand": "auggie",
-                "defaultCliPath": "bunx @augmentcode/auggie",
+                "cliCommand": "goose",
+                "defaultCliPath": "bunx goose-cli",
                 "authRequired": false,
                 "enabled": true,
                 "supportsStreaming": false,
                 "acpArgs": [
-                    "--acp"
+                    "acp"
+                ],
+                "skillsDirs": [
+                    ".goose/skills"
                 ]
             }
         ]
     },
-    "description": "Integrates Augment Code as an ACP adapter in AionUi.",
-    "displayName": "Augment Code",
+    "description": "Integrates Goose as an ACP adapter in AionUi.",
+    "displayName": "Goose",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +33,12 @@
                 "args": [
                     "add",
                     "-g",
-                    "@augmentcode/auggie"
+                    "goose-cli"
                 ]
             },
             "timeout": 30000
         }
     },
-    "name": "aionext-auggie",
+    "name": "aionext-goose",
     "version": "1.0.0"
 }

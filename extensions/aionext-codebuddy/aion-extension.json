@@ -3,23 +3,26 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "auggie",
-                "name": "Augment Code",
-                "description": "Official Augment Code adapter",
+                "id": "codebuddy",
+                "name": "CodeBuddy",
+                "description": "Official CodeBuddy adapter",
                 "connectionType": "stdio",
-                "cliCommand": "auggie",
-                "defaultCliPath": "bunx @augmentcode/auggie",
-                "authRequired": false,
+                "cliCommand": "codebuddy",
+                "defaultCliPath": "bunx @tencent-ai/codebuddy-code",
+                "authRequired": true,
                 "enabled": true,
                 "supportsStreaming": false,
                 "acpArgs": [
                     "--acp"
+                ],
+                "skillsDirs": [
+                    ".codebuddy/skills"
                 ]
             }
         ]
     },
-    "description": "Integrates Augment Code as an ACP adapter in AionUi.",
-    "displayName": "Augment Code",
+    "description": "Integrates CodeBuddy as an ACP adapter in AionUi.",
+    "displayName": "CodeBuddy",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +33,12 @@
                 "args": [
                     "add",
                     "-g",
-                    "@augmentcode/auggie"
+                    "@tencent-ai/codebuddy-code"
                 ]
             },
             "timeout": 30000
         }
     },
-    "name": "aionext-auggie",
+    "name": "aionext-codebuddy",
     "version": "1.0.0"
 }

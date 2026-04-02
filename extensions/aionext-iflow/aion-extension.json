@@ -3,23 +3,23 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "auggie",
-                "name": "Augment Code",
-                "description": "Official Augment Code adapter",
+                "id": "iflow",
+                "name": "iFlow CLI",
+                "description": "Official iFlow CLI adapter",
                 "connectionType": "stdio",
-                "cliCommand": "auggie",
-                "defaultCliPath": "bunx @augmentcode/auggie",
-                "authRequired": false,
+                "cliCommand": "iflow",
+                "defaultCliPath": "bunx @iflow-ai/iflow-cli",
+                "authRequired": true,
                 "enabled": true,
                 "supportsStreaming": false,
-                "acpArgs": [
-                    "--acp"
+                "skillsDirs": [
+                    ".iflow/skills"
                 ]
             }
         ]
     },
-    "description": "Integrates Augment Code as an ACP adapter in AionUi.",
-    "displayName": "Augment Code",
+    "description": "Integrates iFlow CLI as an ACP adapter in AionUi.",
+    "displayName": "iFlow CLI",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +30,12 @@
                 "args": [
                     "add",
                     "-g",
-                    "@augmentcode/auggie"
+                    "@iflow-ai/iflow-cli"
                 ]
             },
             "timeout": 30000
         }
     },
-    "name": "aionext-auggie",
+    "name": "aionext-iflow",
     "version": "1.0.0"
 }

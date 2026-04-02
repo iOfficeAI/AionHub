@@ -3,23 +3,24 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "auggie",
-                "name": "Augment Code",
-                "description": "Official Augment Code adapter",
+                "id": "copilot",
+                "name": "GitHub Copilot",
+                "description": "Official GitHub Copilot adapter",
                 "connectionType": "stdio",
-                "cliCommand": "auggie",
-                "defaultCliPath": "bunx @augmentcode/auggie",
+                "cliCommand": "copilot",
+                "defaultCliPath": "bunx @githubnext/github-copilot-cli",
                 "authRequired": false,
                 "enabled": true,
                 "supportsStreaming": false,
                 "acpArgs": [
-                    "--acp"
+                    "--acp",
+                    "--stdio"
                 ]
             }
         ]
     },
-    "description": "Integrates Augment Code as an ACP adapter in AionUi.",
-    "displayName": "Augment Code",
+    "description": "Integrates GitHub Copilot as an ACP adapter in AionUi.",
+    "displayName": "GitHub Copilot",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +31,12 @@
                 "args": [
                     "add",
                     "-g",
-                    "@augmentcode/auggie"
+                    "@githubnext/github-copilot-cli"
                 ]
             },
             "timeout": 30000
         }
     },
-    "name": "aionext-auggie",
+    "name": "aionext-copilot",
     "version": "1.0.0"
 }
