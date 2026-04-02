@@ -111,7 +111,7 @@ async function main() {
       hubs: hubs,
       contributes: contributesSummary,
       dist: {
-        tarball: `dist/${zipName}`,
+        tarball: zipName,
         integrity: integrity,
         unpackedSize: size
       }

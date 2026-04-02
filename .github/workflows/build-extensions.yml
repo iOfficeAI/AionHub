@@ -50,8 +50,8 @@ jobs:
             git rm -rf .
           fi
 
-          # Copy built artifacts into branch root
-          cp -r /tmp/dist-output/* .
+          # Copy built artifacts into branch root (flat, no nested dist/)
+          cp /tmp/dist-output/*.zip /tmp/dist-output/index.json . 2>/dev/null || true
 
           # Stage and commit if there are changes
           git add -A
