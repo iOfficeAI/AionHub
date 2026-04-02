@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/iOfficeAI/AionHub/spec/v1/extension-manifest.schema.json",
+    "$schema": "https://raw.githubusercontent.com/iOfficeAI/AionHub/spec/v0/extension-manifest.schema.json",
     "author": "Aionui Official",
     "contributes": {
         "acpAdapters": [
