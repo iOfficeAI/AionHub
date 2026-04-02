@@ -36,7 +36,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           # Add only the dist directory
-          git add dist/
+          git add -f dist/
           
           # Check if there are changes to commit
           if git diff --staged --quiet; then
