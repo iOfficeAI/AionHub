@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/iOfficeAI/AionHub/spec/v1/extension-manifest.schema.json",
     "author": "Aionui Official",
     "contributes": {
         "acpAdapters": [
@@ -10,13 +11,9 @@
                 "cliCommand": "qwen",
                 "defaultCliPath": "bunx @qwen-code/qwen-code",
                 "authRequired": true,
-                "enabled": true,
                 "supportsStreaming": true,
                 "acpArgs": [
                     "--acp"
-                ],
-                "skillsDirs": [
-                    ".qwen/skills"
                 ]
             }
         ]
