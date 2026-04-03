@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "generatedAt": "2026-04-02T15:39:34.523Z",
+    "generatedAt": "2026-04-03T11:05:14.054Z",
     "extensions": {
         "aionext-auggie": {
             "name": "aionext-auggie",
@@ -44,8 +44,8 @@
             },
             "dist": {
                 "tarball": "aionext-claude.zip",
-                "integrity": "sha512-t+qfA9Wx5GO4APLvMhra2P+pU5M+spqMir4MTzG/IzQ9FDTjx6tlWTvIFZ894MsrE7AGN6W+8tDw8Z0jTSWNnQ==",
-                "unpackedSize": 585
+                "integrity": "sha512-RgczDP37GuOIL9lnEA/Qxx/wjQlGvYeH3Q5+Jhj+gZfvkct7jZePGLv3+2GWg3bdUA/YgqiAfTe3H87IHYRuOQ==",
+                "unpackedSize": 908
             }
         },
         "aionext-codebuddy": {
@@ -71,6 +71,29 @@
                 "unpackedSize": 585
             }
         },
+        "aionext-codex": {
+            "name": "aionext-codex",
+            "displayName": "Codex",
+            "version": "1.0.0",
+            "description": "Integrates OpenAI Codex CLI as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "codex"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-codex.zip",
+                "integrity": "sha512-KeutLCXKNAPpagTPeeqFxje4i3EuMujJ7VOp3RYYbPjFKbMYuH0wfOscMx3jF5COPRozT3Y/+mQzLN3fT8afrA==",
+                "unpackedSize": 881
+            }
+        },
         "aionext-copilot": {
             "name": "aionext-copilot",
             "displayName": "GitHub Copilot",
@@ -90,8 +113,31 @@
             },
             "dist": {
                 "tarball": "aionext-copilot.zip",
-                "integrity": "sha512-LhViShmKZRh5fcL0dCNV9xjVb6R3y0OqWYp2uINseLD2JJwu0ey8W/A061IpOamwKCmLl/9wKaF44CE6/lnGPA==",
-                "unpackedSize": 586
+                "integrity": "sha512-ZIAcfll4A7+SQsNZ/76p4pwauFI4IFEk1ykDvvem1t5R61NSCQOtpuOMKgdTISIi7KImhiuA2EjxGYrdajzWnw==",
+                "unpackedSize": 581
+            }
+        },
+        "aionext-droid": {
+            "name": "aionext-droid",
+            "displayName": "Droid",
+            "version": "1.0.0",
+            "description": "Integrates Factory Droid as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "droid"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-droid.zip",
+                "integrity": "sha512-YsDJiHBOsdro3e1BR+tNLSMREcOYK6JNF9NfcShEGCQ+0+Y7IWvu03UBfZ74tthTOWS2bwrmwKFjOaJn60O0Xg==",
+                "unpackedSize": 595
             }
         },
         "aionext-gemini": {
@@ -113,8 +159,8 @@
             },
             "dist": {
                 "tarball": "aionext-gemini.zip",
-                "integrity": "sha512-RHaH358ug1Fr+1NBJDZhihopsAOFSLCTbK7mMuBDzDlN2F0kcojzhBDAECTGRqnx8i4Af0A74qV64U3xOb83Ig==",
-                "unpackedSize": 569
+                "integrity": "sha512-4Hsrxa7+YCU36K07j01WNnPh2swf4rS6uXQdN5oTikEfSSnSLvO03wYx+L2wJwHNvaBBp+4ctE+XMOcyEVx8Dg==",
+                "unpackedSize": 579
             }
         },
         "aionext-goose": {
@@ -136,15 +182,15 @@
             },
             "dist": {
                 "tarball": "aionext-goose.zip",
-                "integrity": "sha512-cE6ACmP3ooFrOmT0bhgzEr5h6kdXKhIUI8EcW1I/cIPHXGasUFJJRp/zfjv0pjwtF9+8uVDd7Yo/iPPT40o2Hw==",
-                "unpackedSize": 563
+                "integrity": "sha512-przCZ09tEkP9wItKKYODH59N9vT9y6qF3HI45JFdNZ7wBZ5LSoEffpRjRB/q6zMdmrjTHkrFoFeaFJpTsvFNUg==",
+                "unpackedSize": 965
             }
         },
-        "aionext-nanobot": {
-            "name": "aionext-nanobot",
-            "displayName": "Nano Bot",
+        "aionext-kimi": {
+            "name": "aionext-kimi",
+            "displayName": "Kimi Code",
             "version": "1.0.0",
-            "description": "Integrates Nano Bot as an ACP adapter in AionUi.",
+            "description": "Integrates Kimi Code CLI as an ACP adapter in AionUi.",
             "author": "Aionui Official",
             "engines": {
                 "aionui": "^1.0.0"
@@ -154,13 +200,59 @@
             ],
             "contributes": {
                 "acpAdapters": [
-                    "nanobot"
+                    "kimi"
                 ]
             },
             "dist": {
-                "tarball": "aionext-nanobot.zip",
-                "integrity": "sha512-gQlP9UwPLnosSI4Ac26o/QrihD1WDMvszVw8mpo+uNN1uJu2u20XYLe4LByq0tr9PbWGemmYa8rEy9MMhHhsrw==",
-                "unpackedSize": 557
+                "tarball": "aionext-kimi.zip",
+                "integrity": "sha512-2kShLgFkEEbKROpO5v1SmcP0H/WOrcLJRiVIZM7NdoUBoJAaxguK8Uykq8+TUvSlC5Kj/LQjtP9FUq020fwOCw==",
+                "unpackedSize": 946
+            }
+        },
+        "aionext-kiro": {
+            "name": "aionext-kiro",
+            "displayName": "Kiro CLI",
+            "version": "1.0.0",
+            "description": "Integrates Kiro CLI as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "kiro"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-kiro.zip",
+                "integrity": "sha512-0KmbwOSsDxsnpwXJA8AzRGMXdO8EbP2nGonIPELQTEx9H2yitmQzA5ac2AlblME1f7sy/ARDzCb9xAMZl4Ao6Q==",
+                "unpackedSize": 949
+            }
+        },
+        "aionext-mistral-vibe": {
+            "name": "aionext-mistral-vibe",
+            "displayName": "Mistral Vibe",
+            "version": "1.0.0",
+            "description": "Integrates Mistral Vibe as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "mistral-vibe"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-mistral-vibe.zip",
+                "integrity": "sha512-yXnXNviMU0X63Sw2sTR3+k4TBlCuWjidRPXx+qt5lk+Ef4jS/tK0tb+p6VThKbQVztxOfnlCPtLQ2TMYWC9Rdg==",
+                "unpackedSize": 954
             }
         },
         "aionext-openclaw-gateway": {
@@ -182,8 +274,8 @@
             },
             "dist": {
                 "tarball": "aionext-openclaw-gateway.zip",
-                "integrity": "sha512-PzfX4G3KeYryAougk2fYXpjd8iAIMR5hdwQWHonGTO5gQZy903aYeG0ydJBURl8Rj9C6xgsEYlaJFBogw9zyiQ==",
-                "unpackedSize": 576
+                "integrity": "sha512-jJtqhYGIbwNmZThv7gea/+fWHDyvu5Ugna/9+cSizosdbvpDxNGrHnXdrE7CvHvKJqtQ9Eo+I4I0gKv0m2fbeQ==",
+                "unpackedSize": 575
             }
         },
         "aionext-opencode": {
@@ -205,8 +297,31 @@
             },
             "dist": {
                 "tarball": "aionext-opencode.zip",
-                "integrity": "sha512-UXdUZIzI30U9Apf/SZQdEvKzsfviPRASX/8JH2d8RIlRu/V5YDISzJVtSglCrZ5Or9+xBlPWWQGGZgRu+7Fk7A==",
-                "unpackedSize": 567
+                "integrity": "sha512-+rJpWLUi+mLUWUyMFCbaQ8HUPleXHC19/PxfX4P9Cfl9mcLbpRf1gxzLrs9LqhI/1dkCVyAr9uT6uRJOFeJaFQ==",
+                "unpackedSize": 574
+            }
+        },
+        "aionext-qoder": {
+            "name": "aionext-qoder",
+            "displayName": "Qoder CLI",
+            "version": "1.0.0",
+            "description": "Integrates Qoder CLI as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "qoder"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-qoder.zip",
+                "integrity": "sha512-TuWWM4ion67Mz4a4d8P0SZC2oJ1PCiJ2ce9D0MVDQwztO+gDX0bovRO50IBqhbqtfAJ6aeHjBs+6e6gMzXd4jg==",
+                "unpackedSize": 587
             }
         },
         "aionext-qwen": {
@@ -234,7 +349,7 @@
         }
     },
     "metadata": {
-        "totalExtensions": 10,
+        "totalExtensions": 15,
         "generatedBy": "Aion Extension Builder v1.0.0",
         "repository": "https://github.com/iOfficeAI/AionHub/"
     }
