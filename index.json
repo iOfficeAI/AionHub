@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "generatedAt": "2026-04-03T11:22:06.855Z",
+    "generatedAt": "2026-04-03T12:17:28.812Z",
     "extensions": {
         "aionext-auggie": {
             "name": "aionext-auggie",
@@ -23,29 +23,6 @@
                 "tarball": "aionext-auggie.zip",
                 "integrity": "sha512-4vfCqvrZigpZITh3hYyQE/a440j7t6XsUqC/c7y6Wm/0cyZEnHMtI7nLGqChBT1Px222GUbJqMS82/4Z19LqPg==",
                 "unpackedSize": 577
-            }
-        },
-        "aionext-claude": {
-            "name": "aionext-claude",
-            "displayName": "Claude Code",
-            "version": "1.0.0",
-            "description": "Integrates Anthropic's Claude Code CLI as an ACP adapter in AionUi.",
-            "author": "Aionui Official",
-            "engines": {
-                "aionui": "^1.0.0"
-            },
-            "hubs": [
-                "acpAdapters"
-            ],
-            "contributes": {
-                "acpAdapters": [
-                    "claude"
-                ]
-            },
-            "dist": {
-                "tarball": "aionext-claude.zip",
-                "integrity": "sha512-RgczDP37GuOIL9lnEA/Qxx/wjQlGvYeH3Q5+Jhj+gZfvkct7jZePGLv3+2GWg3bdUA/YgqiAfTe3H87IHYRuOQ==",
-                "unpackedSize": 908
             }
         },
         "aionext-codebuddy": {
@@ -326,7 +303,7 @@
         }
     },
     "metadata": {
-        "totalExtensions": 14,
+        "totalExtensions": 13,
         "generatedBy": "Aion Extension Builder v1.0.0",
         "repository": "https://github.com/iOfficeAI/AionHub/"
     }
