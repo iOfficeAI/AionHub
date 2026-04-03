@@ -4,19 +4,21 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "claude",
-                "name": "Claude Code",
-                "description": "Official Claude Code adapter (via ACP adapter)",
+                "id": "kiro",
+                "name": "Kiro CLI",
+                "description": "Official Kiro CLI adapter (AWS)",
                 "connectionType": "stdio",
-                "cliCommand": "claude-agent-acp",
-                "defaultCliPath": "bunx @agentclientprotocol/claude-agent-acp",
+                "cliCommand": "kiro-cli",
                 "authRequired": true,
-                "supportsStreaming": false
+                "supportsStreaming": false,
+                "acpArgs": [
+                    "acp"
+                ]
             }
         ]
     },
-    "description": "Integrates Anthropic's Claude Code CLI as an ACP adapter in AionUi.",
-    "displayName": "Claude Code",
+    "description": "Integrates Kiro CLI as an ACP adapter in AionUi.",
+    "displayName": "Kiro CLI",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -32,6 +34,6 @@
             "timeout": 120000
         }
     },
-    "name": "aionext-claude",
+    "name": "aionext-kiro",
     "version": "1.0.0"
 }

@@ -4,19 +4,19 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "nanobot",
-                "name": "Nano Bot",
-                "description": "Official Nano Bot adapter",
+                "id": "codex",
+                "name": "Codex",
+                "description": "Official OpenAI Codex adapter (via ACP adapter)",
                 "connectionType": "stdio",
-                "cliCommand": "nanobot",
-                "defaultCliPath": "bunx nanobot",
-                "authRequired": false,
+                "cliCommand": "codex-acp",
+                "defaultCliPath": "bunx @zed-industries/codex-acp",
+                "authRequired": true,
                 "supportsStreaming": false
             }
         ]
     },
-    "description": "Integrates Nano Bot as an ACP adapter in AionUi.",
-    "displayName": "Nano Bot",
+    "description": "Integrates OpenAI Codex CLI as an ACP adapter in AionUi.",
+    "displayName": "Codex",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -25,14 +25,13 @@
             "shell": {
                 "cliCommand": "bun",
                 "args": [
-                    "add",
-                    "-g",
-                    "nanobot"
+                    "run",
+                    "scripts/install.ts"
                 ]
             },
-            "timeout": 30000
+            "timeout": 120000
         }
     },
-    "name": "aionext-nanobot",
+    "name": "aionext-codex",
     "version": "1.0.0"
 }

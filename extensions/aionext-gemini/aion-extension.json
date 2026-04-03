@@ -11,7 +11,10 @@
                 "cliCommand": "gemini",
                 "defaultCliPath": "bunx @google/gemini-cli",
                 "authRequired": true,
-                "supportsStreaming": true
+                "supportsStreaming": true,
+                "acpArgs": [
+                    "--acp"
+                ]
             }
         ]
     },

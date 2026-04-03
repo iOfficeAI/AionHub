@@ -4,22 +4,22 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "openclaw-gateway",
-                "name": "OpenClaw",
-                "description": "Official OpenClaw adapter",
+                "id": "qoder",
+                "name": "Qoder CLI",
+                "description": "Official Qoder CLI adapter",
                 "connectionType": "stdio",
-                "cliCommand": "openclaw",
-                "defaultCliPath": "bunx openclaw",
-                "authRequired": false,
-                "supportsStreaming": true,
+                "cliCommand": "qodercli",
+                "defaultCliPath": "bunx @qoder-ai/qodercli",
+                "authRequired": true,
+                "supportsStreaming": false,
                 "acpArgs": [
-                    "acp"
+                    "--acp"
                 ]
             }
         ]
     },
-    "description": "Integrates OpenClaw as an ACP adapter in AionUi.",
-    "displayName": "OpenClaw",
+    "description": "Integrates Qoder CLI as an ACP adapter in AionUi.",
+    "displayName": "Qoder CLI",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +30,13 @@
                 "args": [
                     "add",
                     "-g",
-                    "openclaw"
+                    "--trust",
+                    "@qoder-ai/qodercli"
                 ]
             },
-            "timeout": 30000
+            "timeout": 60000
         }
     },
-    "name": "aionext-openclaw-gateway",
+    "name": "aionext-qoder",
     "version": "1.0.0"
 }

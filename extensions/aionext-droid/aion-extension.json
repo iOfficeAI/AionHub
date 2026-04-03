@@ -4,22 +4,24 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "openclaw-gateway",
-                "name": "OpenClaw",
-                "description": "Official OpenClaw adapter",
+                "id": "droid",
+                "name": "Droid",
+                "description": "Official Factory Droid adapter",
                 "connectionType": "stdio",
-                "cliCommand": "openclaw",
-                "defaultCliPath": "bunx openclaw",
-                "authRequired": false,
-                "supportsStreaming": true,
+                "cliCommand": "droid",
+                "defaultCliPath": "bunx droid",
+                "authRequired": true,
+                "supportsStreaming": false,
                 "acpArgs": [
+                    "exec",
+                    "--output-format",
                     "acp"
                 ]
             }
         ]
     },
-    "description": "Integrates OpenClaw as an ACP adapter in AionUi.",
-    "displayName": "OpenClaw",
+    "description": "Integrates Factory Droid as an ACP adapter in AionUi.",
+    "displayName": "Droid",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -30,12 +32,13 @@
                 "args": [
                     "add",
                     "-g",
-                    "openclaw"
+                    "--trust",
+                    "droid"
                 ]
             },
-            "timeout": 30000
+            "timeout": 60000
         }
     },
-    "name": "aionext-openclaw-gateway",
+    "name": "aionext-droid",
     "version": "1.0.0"
 }

@@ -9,7 +9,6 @@
                 "description": "Official Goose adapter",
                 "connectionType": "stdio",
                 "cliCommand": "goose",
-                "defaultCliPath": "bunx goose-cli",
                 "authRequired": false,
                 "supportsStreaming": false,
                 "acpArgs": [
@@ -28,12 +27,11 @@
             "shell": {
                 "cliCommand": "bun",
                 "args": [
-                    "add",
-                    "-g",
-                    "goose-cli"
+                    "run",
+                    "scripts/install.ts"
                 ]
             },
-            "timeout": 30000
+            "timeout": 120000
         }
     },
     "name": "aionext-goose",

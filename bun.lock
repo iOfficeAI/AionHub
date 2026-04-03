@@ -1,0 +1,18 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "devDependencies": {
+        "bun-types": "^1.3.11",
+      },
+    },
+  },
+  "packages": {
+    "@types/node": ["@types/node@25.5.1", "https://registry.npmmirror.com/@types/node/-/node-25.5.1.tgz", { "dependencies": { "undici-types": "~7.18.0" } }, "sha512-lgrR3HRNQdTEeeXBnLURFO4JIIbpcVcMlLM9IG0jsNRTRNSbMkm9S2hyhxhnokke1NM25Dr9QghgeB5PQKolrw=="],
+
+    "bun-types": ["bun-types@1.3.11", "https://registry.npmmirror.com/bun-types/-/bun-types-1.3.11.tgz", { "dependencies": { "@types/node": "*" } }, "sha512-1KGPpoxQWl9f6wcZh57LvrPIInQMn2TQ7jsgxqpRzg+l0QPOFvJVH7HmvHo/AiPgwXy+/Thf6Ov3EdVn1vOabg=="],
+
+    "undici-types": ["undici-types@7.18.2", "https://registry.npmmirror.com/undici-types/-/undici-types-7.18.2.tgz", {}, "sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w=="],
+  }
+}

@@ -30,10 +30,11 @@
                 "args": [
                     "add",
                     "-g",
+                    "--trust",
                     "opencode-ai"
                 ]
             },
-            "timeout": 30000
+            "timeout": 60000
         }
     },
     "name": "aionext-opencode",

@@ -9,8 +9,8 @@
                 "description": "Official GitHub Copilot adapter",
                 "connectionType": "stdio",
                 "cliCommand": "copilot",
-                "defaultCliPath": "bunx @githubnext/github-copilot-cli",
-                "authRequired": false,
+                "defaultCliPath": "bunx @github/copilot",
+                "authRequired": true,
                 "supportsStreaming": false,
                 "acpArgs": [
                     "--acp",
@@ -31,10 +31,10 @@
                 "args": [
                     "add",
                     "-g",
-                    "@githubnext/github-copilot-cli"
+                    "@github/copilot"
                 ]
             },
-            "timeout": 30000
+            "timeout": 60000
         }
     },
     "name": "aionext-copilot",

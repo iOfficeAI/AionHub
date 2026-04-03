@@ -4,19 +4,21 @@
     "contributes": {
         "acpAdapters": [
             {
-                "id": "claude",
-                "name": "Claude Code",
-                "description": "Official Claude Code adapter (via ACP adapter)",
+                "id": "kimi",
+                "name": "Kimi Code",
+                "description": "Official Kimi Code adapter",
                 "connectionType": "stdio",
-                "cliCommand": "claude-agent-acp",
-                "defaultCliPath": "bunx @agentclientprotocol/claude-agent-acp",
+                "cliCommand": "kimi",
                 "authRequired": true,
-                "supportsStreaming": false
+                "supportsStreaming": false,
+                "acpArgs": [
+                    "acp"
+                ]
             }
         ]
     },
-    "description": "Integrates Anthropic's Claude Code CLI as an ACP adapter in AionUi.",
-    "displayName": "Claude Code",
+    "description": "Integrates Kimi Code CLI as an ACP adapter in AionUi.",
+    "displayName": "Kimi Code",
     "engine": {
         "aionui": "^1.0.0"
     },
@@ -32,6 +34,6 @@
             "timeout": 120000
         }
     },
-    "name": "aionext-claude",
+    "name": "aionext-kimi",
     "version": "1.0.0"
 }
