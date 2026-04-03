@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "generatedAt": "2026-04-03T11:05:14.054Z",
+    "generatedAt": "2026-04-03T11:22:06.855Z",
     "extensions": {
         "aionext-auggie": {
             "name": "aionext-auggie",
@@ -69,29 +69,6 @@
                 "tarball": "aionext-codebuddy.zip",
                 "integrity": "sha512-tQxGgxlf5pXJRPdLhdrONUtRbCIhJn70ANjII1xOsOPwil/76lVlu2vNuMjFTFIDzfSjQjNO2uJIf39Uc2avHw==",
                 "unpackedSize": 585
-            }
-        },
-        "aionext-codex": {
-            "name": "aionext-codex",
-            "displayName": "Codex",
-            "version": "1.0.0",
-            "description": "Integrates OpenAI Codex CLI as an ACP adapter in AionUi.",
-            "author": "Aionui Official",
-            "engines": {
-                "aionui": "^1.0.0"
-            },
-            "hubs": [
-                "acpAdapters"
-            ],
-            "contributes": {
-                "acpAdapters": [
-                    "codex"
-                ]
-            },
-            "dist": {
-                "tarball": "aionext-codex.zip",
-                "integrity": "sha512-KeutLCXKNAPpagTPeeqFxje4i3EuMujJ7VOp3RYYbPjFKbMYuH0wfOscMx3jF5COPRozT3Y/+mQzLN3fT8afrA==",
-                "unpackedSize": 881
             }
         },
         "aionext-copilot": {
@@ -349,7 +326,7 @@
         }
     },
     "metadata": {
-        "totalExtensions": 15,
+        "totalExtensions": 14,
         "generatedBy": "Aion Extension Builder v1.0.0",
         "repository": "https://github.com/iOfficeAI/AionHub/"
     }
