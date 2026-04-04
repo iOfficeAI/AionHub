@@ -8,8 +8,8 @@
                 "name": "Codex",
                 "description": "Official OpenAI Codex adapter (via ACP adapter)",
                 "connectionType": "stdio",
-                "cliCommand": "codex-acp",
-                "defaultCliPath": "bunx @zed-industries/codex-acp",
+                "cliCommand": "codex",
+                "defaultCliPath": "bunx @zed-industries/codex-acp@0.9.5",
                 "authRequired": true,
                 "supportsStreaming": false
             }

@@ -10,11 +10,9 @@
                 "connectionType": "stdio",
                 "cliCommand": "auggie",
                 "defaultCliPath": "bunx @augmentcode/auggie",
+                "acpArgs": ["--acp"],
                 "authRequired": false,
-                "supportsStreaming": false,
-                "acpArgs": [
-                    "--acp"
-                ]
+                "supportsStreaming": false
             }
         ]
     },
@@ -27,11 +25,7 @@
         "onInstall": {
             "shell": {
                 "cliCommand": "bun",
-                "args": [
-                    "add",
-                    "-g",
-                    "@augmentcode/auggie"
-                ]
+                "args": ["install", "-g", "@augmentcode/auggie"]
             },
             "timeout": 30000
         }

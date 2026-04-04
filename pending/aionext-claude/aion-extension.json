@@ -8,8 +8,8 @@
                 "name": "Claude Code",
                 "description": "Official Claude Code adapter (via ACP adapter)",
                 "connectionType": "stdio",
-                "cliCommand": "claude-agent-acp",
-                "defaultCliPath": "bunx @agentclientprotocol/claude-agent-acp",
+                "cliCommand": "claude",
+                "defaultCliPath": "bunx @zed-industries/claude-agent-acp",
                 "authRequired": true,
                 "supportsStreaming": false
             }

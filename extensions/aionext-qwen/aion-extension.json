@@ -9,12 +9,10 @@
                 "description": "Official Qwen Code adapter",
                 "connectionType": "stdio",
                 "cliCommand": "qwen",
+                "acpArgs": ["--acp"],
                 "defaultCliPath": "bunx @qwen-code/qwen-code",
                 "authRequired": true,
-                "supportsStreaming": true,
-                "acpArgs": [
-                    "--acp"
-                ]
+                "supportsStreaming": true
             }
         ]
     },
@@ -27,11 +25,7 @@
         "onInstall": {
             "shell": {
                 "cliCommand": "bun",
-                "args": [
-                    "add",
-                    "-g",
-                    "@qwen-code/qwen-code"
-                ]
+                "args": ["install", "-g", "@qwen-code/qwen-code"]
             },
             "timeout": 30000
         }

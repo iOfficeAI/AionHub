@@ -10,11 +10,9 @@
                 "connectionType": "stdio",
                 "cliCommand": "codebuddy",
                 "defaultCliPath": "bunx @tencent-ai/codebuddy-code",
+                "acpArgs": ["--acp"],
                 "authRequired": true,
-                "supportsStreaming": false,
-                "acpArgs": [
-                    "--acp"
-                ]
+                "supportsStreaming": false
             }
         ]
     },
@@ -27,11 +25,7 @@
         "onInstall": {
             "shell": {
                 "cliCommand": "bun",
-                "args": [
-                    "add",
-                    "-g",
-                    "@tencent-ai/codebuddy-code"
-                ]
+                "args": ["run", "scripts/install.ts"]
             },
             "timeout": 30000
         }
