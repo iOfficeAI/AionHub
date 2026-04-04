@@ -9,12 +9,10 @@
                 "description": "Official OpenCode adapter",
                 "connectionType": "stdio",
                 "cliCommand": "opencode",
+                "acpArgs": ["acp"],
                 "defaultCliPath": "bunx opencode-ai",
                 "authRequired": false,
-                "supportsStreaming": false,
-                "acpArgs": [
-                    "acp"
-                ]
+                "supportsStreaming": false
             }
         ]
     },
@@ -27,12 +25,7 @@
         "onInstall": {
             "shell": {
                 "cliCommand": "bun",
-                "args": [
-                    "add",
-                    "-g",
-                    "--trust",
-                    "opencode-ai"
-                ]
+                "args": ["install", "-g", "--trust", "opencode-ai"]
             },
             "timeout": 60000
         }

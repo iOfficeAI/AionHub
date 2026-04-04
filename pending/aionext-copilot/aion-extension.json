@@ -10,12 +10,9 @@
                 "connectionType": "stdio",
                 "cliCommand": "copilot",
                 "defaultCliPath": "bunx @github/copilot",
+                "acpArgs": ["--acp"],
                 "authRequired": true,
-                "supportsStreaming": false,
-                "acpArgs": [
-                    "--acp",
-                    "--stdio"
-                ]
+                "supportsStreaming": false
             }
         ]
     },
@@ -28,11 +25,7 @@
         "onInstall": {
             "shell": {
                 "cliCommand": "bun",
-                "args": [
-                    "add",
-                    "-g",
-                    "@github/copilot"
-                ]
+                "args": ["install", "-g", "@github/copilot"]
             },
             "timeout": 60000
         }
