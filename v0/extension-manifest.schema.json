@@ -170,8 +170,6 @@
           "additionalProperties": { "type": "string" }
         },
         "icon": { "type": "string" },
-        "authRequired": { "type": "boolean" },
-        "supportsStreaming": { "type": "boolean" },
         "connectionType": {
           "type": "string",
           "enum": ["cli", "stdio", "websocket", "http"],
@@ -184,15 +182,6 @@
           "items": { "$ref": "#/$defs/Field" },
           "description": "API Key fields for Settings UI. Values are injected into adapter env when spawning."
         },
-        "yoloMode": {
-          "type": "object",
-          "required": ["type"],
-          "properties": {
-            "type": { "type": "string", "enum": ["session", "global"] },
-            "sessionMode": { "type": "string" }
-          },
-          "additionalProperties": false
-        },
         "healthCheck": {
           "type": "object",
           "required": ["versionCommand"],
@@ -201,7 +190,8 @@
             "timeout": { "type": "number" }
           },
           "additionalProperties": false
-        }
+        },
+        "skillsDirs": { "type": "array", "items": { "type": "string" } }
       },
       "additionalProperties": false
     },
