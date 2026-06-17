@@ -1,0 +1,3 @@
+﻿sku,title,action,current_status,target_status,price,stock,category,image_1,image_2,description,tags
+SKU-A001,Summer T-Shirt Men M,publish,offline,online,89.00,200,Apparel,https://example.com/img/a001.jpg,,2026 Summer new cotton tee,summer-new
+SKU-B002,Sport Pants Women L,unpublish,online,offline,129.00,0,Apparel,https://example.com/img/b002.jpg,,Stretch casual pants,out-of-stock

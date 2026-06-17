@@ -1,0 +1,24 @@
+{
+  "project": "星落之时",
+  "episode": "episode-01",
+  "defaults": {
+    "base_url": "https://api.siliconflow.cn/v1",
+    "image_size": "720x1280",
+    "negative_prompt": "text, watermark, logo, extra fingers, bad hands, deformed face, low quality",
+    "model_t2v": "Wan-AI/Wan2.2-T2V-A14B",
+    "model_i2v": "Wan-AI/Wan2.2-I2V-A14B"
+  },
+  "jobs": [
+    {
+      "id": "S001",
+      "mode": "t2v",
+      "prompt": "vertical anime cinematic shot, a young courier girl stands under blue neon rain at midnight, she looks up at a flickering apartment window, slow push-in camera, wet street reflections, suspense mood"
+    },
+    {
+      "id": "S002",
+      "mode": "i2v",
+      "image": "https://example.com/panel.png",
+      "prompt": "keep the same character identity, she blinks once and her wet hair moves slightly, rain falls in the foreground, subtle handheld camera, no face distortion"
+    }
+  ]
+}

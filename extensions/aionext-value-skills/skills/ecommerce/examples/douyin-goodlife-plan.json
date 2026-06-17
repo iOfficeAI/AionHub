@@ -1,0 +1,24 @@
+{
+  "mode": "goodlife",
+  "output_requests": "../exports/douyin-goodlife-api-requests.jsonl",
+  "preview_report": "../exports/douyin-goodlife-api-preview.md",
+  "dry_run": true,
+  "items": [
+    {
+      "product_id": "FILL_GOODLIFE_PRODUCT_ID_1",
+      "sku": "GROUP-001",
+      "action": "online",
+      "current_status": "offline",
+      "target_status": "online",
+      "reason": "Group-buy package online"
+    },
+    {
+      "product_id": "FILL_GOODLIFE_PRODUCT_ID_2",
+      "sku": "GROUP-002",
+      "action": "offline",
+      "current_status": "online",
+      "target_status": "offline",
+      "reason": "Campaign ended"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+display_name: "Video Editor"
+short_description: "Cut, merge, subtitle, voice, and score videos with local tools and no API keys."
+default_prompt: "Edit local video clips into a finished MP4 with subtitles, voiceover, and music using local FFmpeg, whisper.cpp, and Piper tools."

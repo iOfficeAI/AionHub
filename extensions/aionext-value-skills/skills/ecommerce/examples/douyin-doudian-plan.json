@@ -1,0 +1,24 @@
+{
+  "mode": "doudian",
+  "output_requests": "../exports/douyin-doudian-api-requests.jsonl",
+  "preview_report": "../exports/douyin-doudian-api-preview.md",
+  "dry_run": true,
+  "items": [
+    {
+      "product_id": "FILL_DOUDIAN_PRODUCT_ID_1",
+      "sku": "SKU-001",
+      "action": "launch",
+      "current_status": "offline",
+      "target_status": "online",
+      "reason": "New product launch"
+    },
+    {
+      "product_id": "FILL_DOUDIAN_PRODUCT_ID_2",
+      "sku": "SKU-002",
+      "action": "offline",
+      "current_status": "online",
+      "target_status": "offline",
+      "reason": "Temporary offline because stock is low"
+    }
+  ]
+}

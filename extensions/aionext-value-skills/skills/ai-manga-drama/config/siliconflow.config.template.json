@@ -1,0 +1,6 @@
+{
+  "base_url": "https://api.siliconflow.cn/v1",
+  "api_key": "在这里填你的SILICONFLOW_API_KEY，也可以不填并改用环境变量",
+  "default_image_size": "720x1280",
+  "download_timeout_sec": 300
+}

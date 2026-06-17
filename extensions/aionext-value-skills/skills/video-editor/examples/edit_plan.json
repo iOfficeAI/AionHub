@@ -1,0 +1,34 @@
+{
+  "output": "output/final.mp4",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "clips": [
+    {
+      "file": "C:/Videos/source-1.mp4",
+      "start": "00:00:03",
+      "duration": "00:00:08",
+      "volume": 1.0
+    },
+    {
+      "file": "C:/Videos/source-2.mp4",
+      "start": "00:00:10",
+      "duration": "00:00:06",
+      "volume": 1.0
+    }
+  ],
+  "voiceover": {
+    "file": "C:/Videos/voiceover.wav",
+    "volume": 1.0
+  },
+  "music": {
+    "file": "C:/Videos/bgm.mp3",
+    "volume": 0.18
+  },
+  "subtitles": {
+    "file": "C:/Videos/subtitles.srt",
+    "burn": true
+  }
+}

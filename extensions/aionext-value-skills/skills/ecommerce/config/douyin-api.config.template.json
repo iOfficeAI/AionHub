@@ -1,0 +1,25 @@
+{
+  "profile": "fill-this-file-and-save-as-douyin-api.config.json",
+  "operator": "FILL_OPERATOR_OR_STORE_OWNER",
+  "doudian": {
+    "base_url": "https://openapi-fxg.jinritemai.com",
+    "app_key": "FILL_DOUDIAN_APP_KEY",
+    "app_secret": "FILL_DOUDIAN_APP_SECRET",
+    "access_token": "FILL_DOUDIAN_ACCESS_TOKEN",
+    "shop_id": "OPTIONAL_DOUDIAN_SHOP_ID",
+    "permission_note": "Requires product launch/offline permission package. Launch usually submits product review."
+  },
+  "goodlife": {
+    "base_url": "https://open.douyin.com",
+    "client_key": "FILL_GOODLIFE_CLIENT_KEY",
+    "client_secret": "FILL_GOODLIFE_CLIENT_SECRET",
+    "access_token": "FILL_GOODLIFE_ACCESS_TOKEN",
+    "account_id": "OPTIONAL_GOODLIFE_ACCOUNT_ID",
+    "scope_note": "Requires scope: life.capacity.goods.found."
+  },
+  "execution": {
+    "dry_run_default": true,
+    "require_confirmation": true,
+    "allow_live_execute": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "platform": "shopify",
+  "source_file": "../imports/products-export.csv",
+  "output_file": "../exports/listing-update.csv",
+  "preview_report": "../exports/listing-preview.md",
+  "rules": [
+    {
+      "match": {
+        "sku_in": ["SKU-001", "SKU-002"]
+      },
+      "action": "unpublish",
+      "target_status": "offline",
+      "reason": "Seasonal products temporarily offline"
+    }
+  ],
+  "dry_run": true
+}

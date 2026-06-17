@@ -1,0 +1,3 @@
+display_name: SiliconFlow视频
+short_description: 调用硅基流动 Wan2.2 生成文生/图生视频。
+default_prompt: 用 siliconflow-video-gen 给我生成竖屏视频任务，先干跑请求清单，再提交并下载结果。

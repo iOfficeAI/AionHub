@@ -1,0 +1,87 @@
+{
+    "$schema": "https://raw.githubusercontent.com/iOfficeAI/AionHub/spec/v0/extension-manifest.schema.json",
+    "author": "QM AI Claw",
+    "contributes": {
+        "skills": [
+            {
+                "id": "train-12306",
+                "name": "train-12306",
+                "description": "Query China Railway 12306 train schedules, station codes, and ticket availability.",
+                "file": "skills/train-12306/SKILL.md"
+            },
+            {
+                "id": "siliconflow-all",
+                "name": "siliconflow-all",
+                "description": "Route SiliconFlow multimodal tasks through environment-based API credentials.",
+                "file": "skills/siliconflow-all/SKILL.md"
+            },
+            {
+                "id": "image-process",
+                "name": "image-process",
+                "description": "Compress, remove backgrounds, replace backgrounds, and upscale images with local Node tooling.",
+                "file": "skills/image-process/SKILL.md"
+            },
+            {
+                "id": "aicharmer",
+                "name": "aicharmer",
+                "description": "Generate images and videos with MiniMax CLI or SiliconFlow using environment credentials.",
+                "file": "skills/aicharmer/SKILL.md"
+            },
+            {
+                "id": "ecommerce-listing",
+                "name": "ecommerce-listing",
+                "description": "Prepare ecommerce product up/down listing plans, import files, and dry-run API requests.",
+                "file": "skills/ecommerce/SKILL.md"
+            },
+            {
+                "id": "digital-human-voiceover",
+                "name": "digital-human-voiceover",
+                "description": "Generate digital-human voiceover videos with Liudong or Volcengine provider scripts.",
+                "file": "skills/digital-human-voiceover/SKILL.md"
+            },
+            {
+                "id": "old-photo-restoration",
+                "name": "old-photo-restoration",
+                "description": "Restore old photos through configured Liudong or Volcengine providers.",
+                "file": "skills/old-photo-restoration/SKILL.md"
+            },
+            {
+                "id": "old-photo-animation",
+                "name": "old-photo-animation",
+                "description": "Restore old photos and turn them into short narrated animation videos.",
+                "file": "skills/old-photo-animation/SKILL.md"
+            },
+            {
+                "id": "video-editor",
+                "name": "video-editor",
+                "description": "Plan and render local video edits with FFmpeg-compatible tooling; optional dependencies are downloaded separately.",
+                "file": "skills/video-editor/SKILL.md"
+            },
+            {
+                "id": "ai-manga-drama",
+                "name": "ai-manga-drama",
+                "description": "Plan AI manga drama episodes, generate SiliconFlow video jobs, subtitles, and assembly steps.",
+                "file": "skills/ai-manga-drama/SKILL.md"
+            },
+            {
+                "id": "siliconflow-video-gen",
+                "name": "siliconflow-video-gen",
+                "description": "Create, dry-run, submit, poll, and download SiliconFlow text-to-video or image-to-video jobs.",
+                "file": "skills/siliconflow-video-gen/SKILL.md"
+            },
+            {
+                "id": "siliconflow-keyframe-video-outfit",
+                "name": "siliconflow-keyframe-video-outfit",
+                "description": "Create keyframe-based outfit-transfer videos with SiliconFlow and FFmpeg.",
+                "file": "skills/siliconflow-keyframe-video-outfit/SKILL.md"
+            }
+        ]
+    },
+    "description": "A lightweight OpenClaw skill pack for train ticket lookup, SiliconFlow routing, image/video generation, ecommerce listing workflows, photo restoration, digital human voiceovers, and local video editing. Secrets, local models, node_modules, and large binaries are intentionally excluded.",
+    "displayName": "Value Skills Pack",
+    "engine": {
+        "aionui": "^1.0.0"
+    },
+    "name": "aionext-value-skills",
+    "version": "1.0.0"
+}

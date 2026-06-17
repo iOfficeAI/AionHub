@@ -1,0 +1,4 @@
+interface:
+  display_name: "SiliconFlow Keyframe Outfit"
+  short_description: "Keyframe outfit transfer for videos."
+  default_prompt: "Use $siliconflow-keyframe-video-outfit to turn this clothing image and person video into a finished outfit-transfer video."

@@ -1,0 +1,3 @@
+display_name: "Ecommerce"
+short_description: "Prepare product listing, delisting, inventory, and ecommerce operations safely."
+default_prompt: "Help me prepare ecommerce product listing or delisting changes from product data, validate the rows, and generate an import-ready file plus a preview report."
