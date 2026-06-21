@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "generatedAt": "2026-04-05T10:21:10.172Z",
+    "generatedAt": "2026-06-21T05:16:31.391Z",
     "extensions": {
         "aionext-auggie": {
             "name": "aionext-auggie",
@@ -21,8 +21,31 @@
             },
             "dist": {
                 "tarball": "aionext-auggie.zip",
-                "integrity": "sha512-3RZ1YtLdTx3sfqS6VSlO9NaXXUZ74UC/cxbD5eXnBstptMxqTGf8x71+wG5U4qb/Lmp4U3u2kBXhKeEz36L/Gg==",
-                "unpackedSize": 1326
+                "integrity": "sha256-17da462a5ab5a8540066cb0ea19e84502129768e45e8fca9ca8a0ad3efffe571",
+                "unpackedSize": 3107
+            }
+        },
+        "aionext-claude": {
+            "name": "aionext-claude",
+            "displayName": "Claude Code",
+            "version": "1.0.0",
+            "description": "Integrates Anthropic's Claude Code CLI as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "claude"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-claude.zip",
+                "integrity": "sha256-432bff1bb2f2d51d509beb1fadab1b640406769109186579e6f8cfccb2c69ffe",
+                "unpackedSize": 2677
             }
         },
         "aionext-codebuddy": {
@@ -44,8 +67,54 @@
             },
             "dist": {
                 "tarball": "aionext-codebuddy.zip",
-                "integrity": "sha512-GdBqVDJMH8fKtUCqC4bh68kG5t/B/qKpQwlO2bv3vrv743YXD6Nq9YnVX0RbYI6ajn/kue1MHvXB2ed7WcGDYg==",
-                "unpackedSize": 1336
+                "integrity": "sha256-f375bd2639889798a68d02724c63c77367f74125206fef154cac49772aa39532",
+                "unpackedSize": 3544
+            }
+        },
+        "aionext-codex": {
+            "name": "aionext-codex",
+            "displayName": "Codex",
+            "version": "1.0.0",
+            "description": "Integrates OpenAI Codex CLI as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "codex"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-codex.zip",
+                "integrity": "sha256-746ae44b8203f2e1fca6dc3b519e2661ddf81d99f6e26a6d08d3325d9c60d286",
+                "unpackedSize": 2190
+            }
+        },
+        "aionext-goose": {
+            "name": "aionext-goose",
+            "displayName": "Goose",
+            "version": "1.0.0",
+            "description": "Integrates Goose as an ACP adapter in AionUi.",
+            "author": "Aionui Official",
+            "engines": {
+                "aionui": "^1.0.0"
+            },
+            "hubs": [
+                "acpAdapters"
+            ],
+            "contributes": {
+                "acpAdapters": [
+                    "goose"
+                ]
+            },
+            "dist": {
+                "tarball": "aionext-goose.zip",
+                "integrity": "sha256-2b0e88394bfac62c65f9a8bf7c9b69c13875c7bcd44c62dc08fb49947e581718",
+                "unpackedSize": 3684
             }
         },
         "aionext-opencode": {
@@ -67,8 +136,8 @@
             },
             "dist": {
                 "tarball": "aionext-opencode.zip",
-                "integrity": "sha512-hlrBBXJDzBYIkqkUXOnbFJcgSsah7OnPwOtrZEOmgocZEB4rRYuJyD7j6hqb68u2vHnJXtLxm7Pvy94oHh7PcA==",
-                "unpackedSize": 1320
+                "integrity": "sha256-f35b3863f5cfc1a4c2adcb9a086bf9a44a5a1f493937a1e95bb551775a31ab46",
+                "unpackedSize": 2507
             }
         },
         "aionext-qwen": {
@@ -90,13 +159,13 @@
             },
             "dist": {
                 "tarball": "aionext-qwen.zip",
-                "integrity": "sha512-+I6MaGjnOwgFy3Lh6tWqLqvwhG0IRmCnuzApRGCcQ6W0YTbZx8EMDt2Z/Ih4ERMmxyOx4V0IxT+dM++Tu8U9vw==",
-                "unpackedSize": 1327
+                "integrity": "sha256-5d139a2a3a3960eb564b9e2835e2d906d6449e4e3bbe9eb66adf2e7efd77ffa1",
+                "unpackedSize": 2768
             }
         }
     },
     "metadata": {
-        "totalExtensions": 4,
+        "totalExtensions": 7,
         "generatedBy": "Aion Extension Builder v1.0.0",
         "repository": "https://github.com/iOfficeAI/AionHub/"
     }
