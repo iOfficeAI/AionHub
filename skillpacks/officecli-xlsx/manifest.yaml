@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: officecli-xlsx
+displayName: Excel / XLSX
+version: 1.0.0
+description: "Use this skill any time a .xlsx file is involved -- as input, output, or both. This includes: creating spreadsheets, financial models, dashboards, or trackers; reading, parsing, or extracting data from any .xlsx file;..."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - officecli-xlsx

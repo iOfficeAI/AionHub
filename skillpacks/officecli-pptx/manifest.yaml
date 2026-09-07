@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: officecli-pptx
+displayName: PowerPoint / PPTX
+version: 1.0.0
+description: "Use this skill any time a .pptx file is involved -- as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file; editing, mod..."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - officecli-pptx

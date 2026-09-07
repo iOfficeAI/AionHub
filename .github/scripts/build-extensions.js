@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { execSync } = require('child_process');
+const YAML = require('yaml');
 
 /**
  * Recursively collect all file paths under `dir`, sorted for deterministic ordering.
@@ -138,6 +139,77 @@ async function main() {
         unpackedSize: size
       }
     };
+  }
+  // Process skillpacks (knowledge packages with manifest.yaml)
+  const skillpacksDir = path.join(__dirname, '../../skillpacks');
+  if (fs.existsSync(skillpacksDir)) {
+    const packDirs = fs.readdirSync(skillpacksDir).filter(f => fs.statSync(path.join(skillpacksDir, f)).isDirectory());
+    for (const packDirName of packDirs) {
+      const packPath = path.join(skillpacksDir, packDirName);
+      const manifestPath = fs.existsSync(path.join(packPath, 'manifest.yaml'))
+        ? path.join(packPath, 'manifest.yaml')
+        : path.join(packPath, 'manifest.yml');
+
+      if (!fs.existsSync(manifestPath)) {
+        console.warn(`Skipping skillpack ${packDirName}: No manifest.yaml found.`);
+        continue;
+      }
+
+      console.log(`Packaging skillpack: ${packDirName}...`);
+
+      let manifest;
+      try {
+        manifest = YAML.parse(fs.readFileSync(manifestPath, 'utf8'));
+      } catch (e) {
+        console.error(`Failed to parse ${manifestPath}:`, e.message);
+        continue;
+      }
+
+      const zipName = `${packDirName}.zip`;
+      const zipPath = path.join(distDir, zipName);
+      if (fs.existsSync(zipPath)) fs.unlinkSync(zipPath);
+
+      try {
+        execSync(`cd "${packPath}" && find . -exec touch -t 202401010000 {} + && zip -r -X "${zipPath}" . -x "*.DS_Store" -x "*.git*" -x "__MACOSX/*" -x "node_modules/*"`, { stdio: 'inherit' });
+      } catch (e) {
+        console.error(`Failed to zip skillpack ${packDirName}:`, e.message);
+        continue;
+      }
+
+      const contentHash = computeContentHash(packPath);
+      const integrity = `sha256-${contentHash}`;
+      const size = fs.statSync(zipPath).size;
+
+      const hubsSet = new Set(Array.isArray(manifest.hubs) ? manifest.hubs : ['skills', 'knowledge']);
+      const contributesSummary = {};
+
+      if (manifest.contributes && typeof manifest.contributes === 'object') {
+        Object.keys(manifest.contributes).forEach(key => {
+          hubsSet.add(key);
+          const items = manifest.contributes[key];
+          if (Array.isArray(items)) {
+            contributesSummary[key] = items.map(item => (typeof item === 'object' ? item.id : item)).filter(Boolean);
+          }
+        });
+      } else {
+        contributesSummary['skills'] = [manifest.name || packDirName];
+      }
+
+      indexData.extensions[packDirName] = {
+        name: manifest.name || packDirName,
+        displayName: manifest.displayName || manifest.display_name || manifest.name || packDirName,
+        version: manifest.version || '0.1.0',
+        description: manifest.description || '',
+        author: manifest.author || 'Aion Official',
+        hubs: Array.from(hubsSet),
+        contributes: contributesSummary,
+        dist: {
+          tarball: zipName,
+          integrity: integrity,
+          unpackedSize: size
+        }
+      };
+    }
   }
 
   indexData.metadata.totalExtensions = Object.keys(indexData.extensions).length;

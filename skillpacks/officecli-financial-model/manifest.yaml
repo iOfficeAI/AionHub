@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: officecli-financial-model
+displayName: Financial Model
+version: 1.0.0
+description: Use this skill when the user wants to build a financial model — 3-statement model, DCF valuation, LBO, SaaS unit economics, sensitivity / scenario analysis, debt schedule, or fundraising projections — in Excel. Trigge...
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - officecli-financial-model

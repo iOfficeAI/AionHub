@@ -1,0 +1,34 @@
+schema_version: "1.0"
+name: credit-rating-methodology
+displayName: 企业信用评级方法论
+version: 0.1.0
+description: 企业信用评级方法论与打分卡专家知识包，涵盖违约判定、财务比率权重、打分卡区间与溯源要求。
+author: Aion Official
+hubs:
+  - skills
+  - knowledge
+contributes:
+  skills:
+    - credit-rating-methodology
+source_refs:
+  - id: ref-scorecard
+    authority: standard
+    effective_from: "2024-01-01"
+    path: references/scorecard.yaml
+    content_hash: "sha256:66efc893f09de034ef06b4e14de5a3a2a1ae603a418b41da8da14706402916be"
+  - id: ref-framework
+    authority: regulation
+    effective_from: "2024-01-01"
+    path: references/rating_framework.md
+    content_hash: "sha256:ad0c4bd04c95c429f92cea3aaa48a5da83107dc1c50258feca6919c0a1f1d37a"
+rules:
+  rating-intervals:
+    canonical_source: "references/scorecard.yaml#/intervals"
+    description: "企业信用等级符号与评分区间映射表"
+  financial-weights:
+    canonical_source: "references/scorecard.yaml#/financial_weights"
+    description: "定量财务指标评估权重分配"
+eval:
+  runner: promptfoo
+  cases_dir: evals
+provenance: provenance.json

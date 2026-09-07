@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: morph-ppt
+displayName: Morph PPT
+version: 1.0.0
+description: "Use this skill when the user wants a .pptx with smooth cross-slide animation — PowerPoint Morph transitions, Keynote-style continuous motion, shapes that grow / move / rotate as the slide advances. Trigger on: 'morph'..."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - morph-ppt

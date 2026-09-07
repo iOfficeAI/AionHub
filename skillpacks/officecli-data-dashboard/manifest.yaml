@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: officecli-data-dashboard
+displayName: Data Dashboard
+version: 1.0.0
+description: "Use this skill to build a multi-element Excel dashboard — Dashboard sheet on open, multiple formula-driven KPI cards, multiple charts, sparklines, and conditional formatting — from CSV or tabular input. Trigger on: 'd..."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - officecli-data-dashboard

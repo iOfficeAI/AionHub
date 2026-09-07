@@ -1,0 +1,7 @@
+version: "1.0"
+description: "信用评级方法论能力测试集"
+runner: promptfoo
+test_cases_dir: cases
+cases:
+  - id: case_01_auto_maker
+    file: cases/case_01_auto_maker.json

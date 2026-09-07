@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: weixin-file-send
+displayName: 微信文件发送
+version: 1.0.0
+description: "Use when the user wants a local file or image sent back, such as \"send me the file\" or \"发给我\"."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - weixin-file-send

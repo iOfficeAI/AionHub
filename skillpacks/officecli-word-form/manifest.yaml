@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: officecli-word-form
+displayName: Word Form
+version: 1.0.0
+description: "Use this skill to create fillable Word forms (.docx) with real Content Controls (SDT) + legacy FormField checkboxes + MERGEFIELD mail-merge placeholders + document protection. Trigger on: 'fillable form', 'form fields..."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - officecli-word-form

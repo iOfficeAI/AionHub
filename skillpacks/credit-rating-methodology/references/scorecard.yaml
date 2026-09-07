@@ -1,0 +1,43 @@
+version: "1.0"
+intervals:
+  - grade: AAA
+    score_min: 90
+    score_max: 100
+    description: "偿债能力极强，基本不受不利经济环境影响，违约风险极低"
+  - grade: AA
+    score_min: 80
+    score_max: 89
+    description: "偿债能力很强，受不利经济环境影响较小，违约风险很低"
+  - grade: A
+    score_min: 70
+    score_max: 79
+    description: "偿债能力较强，较易受不利经济环境影响，违约风险较低"
+  - grade: BBB
+    score_min: 60
+    score_max: 69
+    description: "偿债能力一般，受不利经济环境影响较大，违约风险一般"
+  - grade: BB
+    score_min: 50
+    score_max: 59
+    description: "偿债能力较弱，受不利经济环境影响很大，有较高违约风险"
+  - grade: B
+    score_min: 40
+    score_max: 49
+    description: "偿债能力较大地依赖于良好的经济环境，违约风险很高"
+  - grade: CCC
+    score_min: 30
+    score_max: 39
+    description: "偿债能力极度依赖良好的经济环境，违约风险极高"
+  - grade: CC
+    score_min: 20
+    score_max: 29
+    description: "在破产或重组边缘，基本不能保证偿还债务"
+  - grade: C
+    score_min: 0
+    score_max: 19
+    description: "不能偿还债务，已处于实际违约状态"
+financial_weights:
+  asset_liability_ratio: 0.25
+  ebitda_interest_coverage: 0.25
+  operating_cash_flow_debt: 0.25
+  current_ratio: 0.25

@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: officecli-academic-paper
+displayName: Academic Paper
+version: 1.0.0
+description: "Use this skill to build academic-style .docx output: journal / conference / thesis chapters carrying formal citation style (APA, Chicago, IEEE, MLA), numbered equations, figure & table cross-references, footnotes/endn..."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - officecli-academic-paper

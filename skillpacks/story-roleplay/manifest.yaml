@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: story-roleplay
+displayName: Story Roleplay
+version: 1.0.0
+description: Parse and apply character cards and world info files in multiple formats (PNG, WebP, JSON), fully compatible with SillyTavern format. Supports automatic parsing, keyword triggering, and dynamic updates.
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - story-roleplay

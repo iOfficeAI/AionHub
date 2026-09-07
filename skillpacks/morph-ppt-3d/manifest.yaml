@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: morph-ppt-3d
+displayName: Morph PPT 3D
+version: 1.0.0
+description: 3D Morph PPT — extends morph-ppt with GLB model insertion, cinematographic camera, model-content layout, and enriched visual design system.
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - morph-ppt-3d

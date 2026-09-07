@@ -1,0 +1,14 @@
+{
+  "contract_name": "CreditEvidenceContract",
+  "version": "1.0",
+  "data_gap_policy": {
+    "required_financial_years": 3,
+    "require_audited_statements": true,
+    "on_missing_key_metric": "downgrade_one_notch",
+    "on_disclaimer_audit_opinion": "trigger_fatal_data_gap"
+  },
+  "citation_policy": {
+    "require_inline_citations": true,
+    "allowed_prefix": ["SRC", "WEB"]
+  }
+}

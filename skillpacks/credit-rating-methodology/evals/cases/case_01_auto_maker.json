@@ -1,0 +1,9 @@
+{
+  "case_id": "case_01_auto_maker",
+  "name": "某新能源整车制造企业信用评级测试",
+  "input": "请依据信用评级方法论，对某新能源汽车制造企业进行评级评估。资产负债率55%，EBITDA利息保障倍数6.2倍，经营现金流良好，综合得分84分。",
+  "expected": {
+    "credit_rating": "AA",
+    "rating_outlook": "Stable"
+  }
+}

@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: openclaw-setup
+displayName: OpenClaw Setup
+version: 1.0.0
+description: "OpenClaw usage expert: Helps you install, deploy, configure, and use OpenClaw personal AI assistant. Can diagnose issues, create bots, execute automated tasks, etc. Use when users need to install OpenClaw, configure G..."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - openclaw-setup

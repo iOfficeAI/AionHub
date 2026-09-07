@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: officecli-docx
+displayName: Word / DOCX
+version: 1.0.0
+description: "Use this skill any time a .docx file is involved -- as input, output, or both. This includes: creating Word documents, reports, letters, memos, or proposals; reading, parsing, or extracting text from any .docx file; e..."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - officecli-docx

@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CreditRatingOutput",
+  "type": "object",
+  "required": [
+    "subject_name",
+    "credit_rating",
+    "rating_outlook",
+    "composite_score",
+    "rationale",
+    "evidence_citations"
+  ],
+  "properties": {
+    "subject_name": {
+      "type": "string",
+      "description": "评估企业主体全称"
+    },
+    "credit_rating": {
+      "type": "string",
+      "enum": ["AAA", "AA", "A", "BBB", "BB", "B", "CCC", "CC", "C"],
+      "description": "最终企业主体信用等级"
+    },
+    "rating_outlook": {
+      "type": "string",
+      "enum": ["Stable", "Positive", "Negative"],
+      "description": "评级展望"
+    },
+    "composite_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "模型综合评分"
+    },
+    "rationale": {
+      "type": "string",
+      "description": "核心评级依据与关键优劣势分析"
+    },
+    "evidence_citations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "引用的信源标号列表 (如 [SRC-1])"
+    }
+  }
+}

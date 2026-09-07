@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - 'extensions/**'
+      - 'skillpacks/**'
+      - '.github/scripts/build-extensions.js'
+      - 'package.json'
+      - 'bun.lock'
   workflow_dispatch:
 
 jobs:
@@ -27,6 +31,9 @@ jobs:
 
       - name: Setup system zip
         run: sudo apt-get update && sudo apt-get install -y zip
+
+      - name: Install build dependencies
+        run: npm install
 
       - name: Build and Package Extensions
         run: node .github/scripts/build-extensions.js

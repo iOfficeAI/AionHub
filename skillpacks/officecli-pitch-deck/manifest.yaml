@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: officecli-pitch-deck
+displayName: Pitch Deck
+version: 1.0.0
+description: "Use this skill when the user is building a fundraising / investor pitch deck — seed, Series A / B / C, convertible note, SAFE round, strategic raise. Trigger on: 'pitch deck', 'investor deck', 'Series A deck', 'Series..."
+author: Aion Official
+hubs:
+  - skills
+contributes:
+  skills:
+    - officecli-pitch-deck
